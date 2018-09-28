@@ -17,4 +17,18 @@
   background: #fff;
   z-index: 3;
   width: 360px;
+  border-radius: 6px;
+}
+
+.modal-form div, p {
+  padding-left: 10px;
+}
+
+.submit {
+  padding-bottom: 10px;
+}
+.modal-form h1 {
+  font-size: 28px;
+  padding-top: 20px;
+  padding-left: 10px;
 }
