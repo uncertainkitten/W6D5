@@ -1,0 +1,28 @@
+@font-face {
+  font-family: heydings;
+  src: url('./heydings-common-icons/heydings_icons.ttf');
+}
+
+.clockdings {
+  font-family: heydings;
+  color: deeppink;
+  font-size: 24pt;
+}
+
+.clock-outer {
+  display: flex;
+  flex-direction: column;
+  background-color: papayawhip;
+  width: 450px;
+  border: 10px double navy;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-div {
+  display: flex;
+  justify-content: space-between;
+}

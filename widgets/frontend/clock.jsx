@@ -7,7 +7,11 @@ class Clock extends React.Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.tick(), 1000);
+    this.interval = setInterval(() => this.tick(), 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   tick() {
@@ -18,7 +22,16 @@ class Clock extends React.Component {
     return (
       <div>
         <h1>CLOCK ~!</h1>
-          <p>{`${this.state.date}`}</p>
+          <section className="clock-outer">
+            <div className="flex-div">
+              <span className="clockdings">Time:</span>
+              <span className="clockdings">{this.state.date.toLocaleTimeString({timeZoneName: 'short'})}</span>
+            </div>
+            <div className="flex-div">
+              <span className="clockdings">Date:</span>
+              <span className="clockdings">{this.state.date.toLocaleDateString({month: 'short', weekday: 'short'})}</span>
+            </div>
+          </section>
       </div>
     );
   }
