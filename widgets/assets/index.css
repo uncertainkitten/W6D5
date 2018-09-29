@@ -3,10 +3,12 @@
   src: url('./heydings-common-icons/heydings_icons.ttf');
 }
 
+
 .clockdings {
   font-family: heydings;
   color: deeppink;
   font-size: 24pt;
+  animation:
 }
 
 .clock-outer {
@@ -15,6 +17,7 @@
   background-color: papayawhip;
   width: 450px;
   border: 10px double navy;
+  min-height: 85px;
 }
 
 #root {
@@ -25,4 +28,8 @@
 .flex-div {
   display: flex;
   justify-content: space-between;
+}
+
+.flash {
+  display: none;
 }
